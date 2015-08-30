@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C1t-7G-ABA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="kuv-Id-cUy">
+            <objects>
+                <tableViewController id="C1t-7G-ABA" customClass="TYTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" id="1Un-m0-oUn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TYCell" rowHeight="160" id="9NE-zT-KgX" customClass="TYTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9NE-zT-KgX" id="PhW-V4-oYz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ch-CQ-bp0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="159.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0ch-CQ-bp0" firstAttribute="leading" secondItem="PhW-V4-oYz" secondAttribute="leadingMargin" constant="-8" id="JSb-Qn-Zxv"/>
+                                        <constraint firstItem="0ch-CQ-bp0" firstAttribute="top" secondItem="PhW-V4-oYz" secondAttribute="topMargin" constant="-8" id="KiX-mg-8b7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0ch-CQ-bp0" secondAttribute="bottom" constant="-8" id="Szp-gO-CCa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0ch-CQ-bp0" secondAttribute="trailing" constant="-8" id="ZYU-Zg-aDP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tyImageView" destination="0ch-CQ-bp0" id="Gkb-gv-imV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C1t-7G-ABA" id="gjC-eA-LJ9"/>
+                            <outlet property="delegate" destination="C1t-7G-ABA" id="U5t-wZ-woK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deU-sg-Q2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="396"/>
+        </scene>
+    </scenes>
+</document>
